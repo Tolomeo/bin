@@ -1,0 +1,28 @@
+if [ -f ~/.bashrc ]; then
+   source ~/.bashrc
+fi
+
+# ENV VAR
+export EDITOR=/usr/local/bin/atom
+
+# ACTION ALIASES
+alias l="ls -la"
+alias cleanupDS="find . -type f -name '*.DS_Store' -ls -delete"
+alias finderShowHidden='defaults write com.apple.finder ShowAllFiles TRUE'
+alias finderHideHidden='defaults write com.apple.finder ShowAllFiles FALSE'
+alias cleanopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain system -domain user'
+alias removesvn='find . -name \".svn\" -exec rm -rf {} \;'
+alias rmtrash='rm -R ~/.Trash/*'
+alias rb='ruby'
+alias psql='/Applications/Postgres.app/Contents/Versions/9.5/bin/psql'
+
+alias cdserver='cd /Applications/MAMP/htdocs/'
+alias cddesktop='cd /Users/diegofrattini/Desktop/'
+
+
+# UTILITY ALIAS
+# alias pgstart="postgres -D /usr/local/var/postgres"
+
+# RBENV
+eval "$(rbenv init -)"
+
