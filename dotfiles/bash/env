@@ -1,0 +1,6 @@
+# ENVIROMENT
+
+
+# RBENV
+
+eval "$(rbenv init -)"
